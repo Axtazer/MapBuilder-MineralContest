@@ -1,0 +1,4 @@
+name: Mapbuilder
+version: ${project.version}
+main: fr.synchroneyes.mapbuilder.Main
+api-version: 1.15
