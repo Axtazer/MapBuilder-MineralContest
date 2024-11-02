@@ -42,7 +42,7 @@ public class ItemSpawnNPCShop extends Element {
         if(getSpawnItem().equals(joueur.getInventory().getItemInMainHand()) && (event.getAction() == Action.LEFT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_AIR)) {
             e.setNpc(joueur.getLocation());
             event.setCancelled(true);
-            joueur.sendMessage("Position du NPC pour l'équipe " + e.getCouleur() + e.getNomEquipe() + ChatColor.RESET + "définie !");
+            joueur.sendMessage("Position du NPC pour l'équipe " + e.getCouleur() + e.getNomEquipe() + ChatColor.RESET + " définie !");
             Main.getInstance().getActionManager().setCurrentActionOver();
             joueur.getInventory().getItemInMainHand().setAmount(0);
             Location loc = joueur.getLocation();
